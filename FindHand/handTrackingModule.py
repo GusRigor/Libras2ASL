@@ -25,6 +25,7 @@ class detectorMaos():
         return imagem
 
     def encontrarPosicao(self, imagem, numMao=0, desenhar=True):
+        imagem = self.encontrarMaos(imagem, desenhar)
         listaPntRef = []
         if self.resultados.multi_hand_landmarks:
             minhaMao = self.resultados.multi_hand_landmarks[numMao]
