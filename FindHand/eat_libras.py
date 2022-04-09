@@ -56,9 +56,10 @@ def mostrar_eat():
     cap = cv2.VideoCapture('eat.mp4')
     while True:
         sucesso, frame = cap.read()
-        cv2.imshow('eat',frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-         break
+        if sucesso:
+            cv2.imshow('eat',frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
     cap.release()
     cv2.destroyAllWindows()
 
