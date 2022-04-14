@@ -3,6 +3,7 @@ import time
 import handTrackingModule as dtm
 from enum import Enum
 
+#TODO: Colocar um offset para a distancia/tempo de abaixado. E colocar um delay. Integrar com o modelo de rosto para não funcionar se não estiver perto.
 class posicaoMao(Enum):
     Inicial = 1
     Abaixada = 2
@@ -60,8 +61,10 @@ def mostrar_eat():
             cv2.imshow('eat',frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
-    cap.release()
-    cv2.destroyAllWindows()
+        else:
+            cap.release()
+            main()
+            break
 
 def main():
     camera = cv2.VideoCapture(0)
