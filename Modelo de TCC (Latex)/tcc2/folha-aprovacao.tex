@@ -1,0 +1,67 @@
+% FOLHA DE APROVAÇÃO------------------------------------------------------------------
+
+% Entre com os dados da banca
+\newcommand{\hora}{10h40}
+\newcommand{\dia}{30}
+\newcommand{\mes}{fevereiro}
+\newcommand{\ano}{\the\year}
+\newcommand{\membroA}{Hommer Simpson\\ Instituição} % Membro A
+\newcommand{\membroB}{Gordon Freeman\\ Instituição}   % Membro B
+\newcommand{\coordenador}{Prof. Dr. Fábio Risental Coutinho}
+\newcommand{\numerotcc}{70} % Pedir um número ao professor responsável pelo TCC
+
+% Início da folha de aprovação (não alterar)
+\begin{folhadeaprovacao}
+
+    \noindent\begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \raisebox{-0.8\height}{\includegraphics[width=0.7\textwidth]{dados/figuras/folha-aprovacao/brasao.eps}}
+    \end{minipage}
+    \begin{minipage}[t]{0.6\textwidth}
+        \begin{center}
+            Ministério da Educação\\
+            \textbf{Universidade Tecnológica Federal do Paraná}\\
+            Campus Toledo\\
+            Coordenação do Curso de Engenharia Eletrônica
+        \end{center}
+    \end{minipage}
+    \begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \raisebox{-1.2\height}{\includegraphics[width=\textwidth]{dados/figuras/folha-aprovacao/logo_UTFPR_cor.eps}}
+    \end{minipage}
+    
+    \vspace{0.5cm}
+    
+    \noindent\hrulefill
+    
+    \begin{center}
+        TERMO DE APROVAÇÃO\\[5pt]
+        Título do Trabalho de Conclusão de Curso \numero{\numerotcc{}}
+    \end{center}
+    %\vspace{1.0cm}
+    \begin{center}
+        \large\textbf{\imprimirtitulo}\\[10pt]
+        por\\[10pt]
+        \imprimirautor\\[15pt]
+    \end{center}
+        
+    % Alterar o texto com a data e hora da defesa:
+    \noindent Esse Trabalho de Conclusão de Curso foi apresentado às \textbf{\hora{} do dia \dia{} de \mes{} de \ano{}} como \textbf{requisito parcial} para a obtenção do título de \textbf{\imprimirtituloAcademico}. Após deliberação da Banca Examinadora, composta pelos professores abaixo assinados, o trabalho foi considerado \textbf{APROVADO}.
+        
+    % Assinaturas
+    \begin{center}
+        \assinatura{\membroA}
+        \assinatura{\membroB}
+        \assinatura{\imprimirorientador \\UTFPR}
+        \assinatura{\coordenador \\ UTFPR}
+    \end{center}
+    
+    % Finalização
+ 	\begin{center}
+ 	\small O termo de aprovação assinado encontra-se na coordenação do curso
+	\vfill
+	{\large\imprimirlocal, \dia{} de \mes{} de \ano{}}
+	\end{center}
+	
+\end{folhadeaprovacao}
+	
